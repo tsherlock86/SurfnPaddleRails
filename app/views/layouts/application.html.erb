@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Rangers!</title>
+  <link rel="stylesheet" href="./styles.css"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+
+        <div class="jumbotron">
+          <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">A Morphin' Blog</a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+          <div class="row">
+            <!-- <img id="logo1" <%= image_tag "logo.png" %><img> -->
+            <!-- <div id="texts">A Morphin' Blog</div> -->
+            <div class ="searchbar">
+              <ul class ="searchbar__text"
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class ="main">
+          <div class="wrapper1">
+        <%= yield %>
+          </div>
+
+        <div class="wrapper__side">
+          <img id="logo2" src="logo2.jpg">
+          <h2>Zack Taylor<h2>
+          <ul class="smedia">
+            <li class="connect">Twitter</li>
+            <li class="connect">Facebook</li>
+            <li class="connect">Instagram</li>
+          </ul>
+          <img id="side_image" src="image2.jpg">
+          <h2 class="quotes">"Looks like it's time to go to work."<h2>
+          <p class="side_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et venenatis lorem, nec venenatis magna. Sed in blandit leo. Donec nec leo ligula. Aliquam erat volutpat.<p>
+        </div>
+      </div>
+
+      <div class="sub_main">
+          <HR WIDTH="100%" >
+            <h3>MOST POPULAR VILLAINS</h3>
+        <div class="sub__footer">
+
+              <div class="villain" id="villian1">
+                <h4>Rita<h4>
+              </div>
+
+              <div class="villain" id="villian2">
+                <h4>Goldar<h4>
+              </div>
+
+              <div class="villain" id="villian3">
+                <h4>Scorpina<h4>
+              </div>
+
+              <div class="villain" id="villian4">
+                <h4>Lord Zed<h4>
+              </div>
+
+          <div class="nav_footer">
+            <img id="logo3" src="logo3.ico">
+            <span class="company">Zordon Productions, Copyright 2015. All Rights Reserved.<span>
+              <ul class="smedia3">
+                <li><a href="http://www.powerrangers.com/">Store<a></li>
+                <li><a href="http://timelife.com/products/power-rangers-from-mighty-morphin-to-lost-galaxy">DVDS<a></li>
+                <li><a href="http://www.mtv.com/artists/mighty-morphin-power-rangers/tourdates/">Tour Locator<a></li>
+                <li><a href="http://www.rangercentral.com/database/1993_mightymorphin/mmpr-villains.htm">Villain Locator<a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
