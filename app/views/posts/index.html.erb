@@ -1,14 +1,42 @@
-<% @posts.each do |post| %>
+<% content_for :top do %>
+<%= "Rangers!" %>
+<% end %>
+
+
 <div class="post-preview">
-    <a href="<%= post_path(:id => post.id) %>">
-        <h2 class="post-title">
-            <%= post.title %>
-        </h2>
-        <h3 class="post-subtitle">
-            <%= post.summary %>
-        </h3>
-    </a>
-    <p class="post-meta">Posted by <a href="#"><%= post.author %></a></p>
+  <h2 class="post-title">
+    <%= @firstpost.title %>
+  </h2>
+  <h3 class="post-subtitle">
+    <%= @firstpost.summary %>
+  </h3>
+</a>
+<p class="post-meta">Posted by <a href="#"><%= @firstpost.author %></a></p>
 </div>
 <hr/>
+
+<% content_for :bottom do %>
+
+<h3 class="text-center">MOST POPULAR POSTS</h3>
+<div class="row">
+
+  <div class="col-xs-3">
+    <%= link_to image_tag('villian1.jpg'), post_path(:id => 1) %>
+    <p class="image_text"><%= @posts[0].title %></p>
+  </div>
+  <div class="col-xs-3">
+    <%= link_to image_tag('villian2.jpg'), post_path(:id => 2) %>
+    <p class="image_text"><%= @posts[1].title %></p>
+
+  </div>
+  <div class="col-xs-3">
+    <%= link_to image_tag('villian3.jpg'), post_path(:id => 3) %>
+    <p class="image_text"><%= @posts[2].title  %></p>
+  </div>
+  <div class="col-xs-3">
+    <%= link_to image_tag('villian4.jpg'), post_path(:id => 4) %>
+    <p class="image_text"><%= @posts[3].title %></p>
+  </div>
+</div>
+
 <% end %>

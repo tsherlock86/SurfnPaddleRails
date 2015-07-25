@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Rangers!</title>
-  <link rel="stylesheet" href="./styles.css"/>
+  <title><%= yield(:top) %></title>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
@@ -18,7 +17,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
-  <body>
+  <body id="<%= params[:controller] %>" class="<%= params[:action] %>">
 
     <div class="container-fluid">
 
@@ -26,13 +25,13 @@
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">A Morphin' Blog</a>
+              <a class="navbar-brand"<%= link_to 'A Morphin Blog', home_path %></a>
             </div>
             <div>
               <ul class="nav navbar-nav">
               </ul>
               <ul class="nav navbar-nav pull-right">
-                <li><a href="#">About</a></li>
+                <li><a><%= link_to 'About', about_path %></a></li>
                 <li><a href="#">Search</a></li>
               </ul>
             </div>
@@ -61,33 +60,16 @@
       </div> -->
     </div>
       <div class="container-fluid">
-          <HR WIDTH="100%" >
-            <h3>MOST POPULAR VILLAINS</h3>
-            <div class="row">
-
-              <div class="col-xs-3">
-                <img id="villian"class="img-responsive"><%= image_tag 'villian1.jpg' %><img>
-              </div>
-              <div class="col-xs-3">
-                <img id="villian" class="img-responsive"><%= image_tag 'villian2.jpg' %><img>
-              </div>
-              <div class="col-xs-3">
-                <img id="villian"class="img-responsive"><%= image_tag 'villian3.jpg' %><img>
-              </div>
-              <div class="col-xs-3">
-                <img id="villian" class="img-responsive"><%= image_tag 'villian4.jpg' %><img>
-              </div>
-            </div>
-
-
+          <hr/>
+          <%= yield(:bottom) %>
           <footer class="footer">
 
-            <span>Zordon Productions, Copyright 2015. All Rights Reserved.<span>
-              <ul class="temp">
-                <li><a href="#">Store<a></li>
-                <li><a href="#">DVDS<a></li>
-                <li><a href="#">Tour Locator<a></li>
-                <li><a href="#">Villain Locator<a></li>
+            <a class="navbar-brand">Zordon Productions, Copyright 2015. All Rights Reserved.</a>
+              <ul class="nav navbar-nav pull-right">
+                <li><a href="#">Store</a></li>
+                <li><a href="#">DVDS</a></li>
+                <li><a href="#">Tour Locator</a></li>
+                <li><a href="#">Villain Locator</a></li>
               </ul>
           </div>
         </footer>

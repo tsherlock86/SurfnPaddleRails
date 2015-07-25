@@ -8,7 +8,7 @@ html {
 
 a {
   text-decoration: none !important;
-  color: grey;
+  color: grey !important;
 }
 
 a:-webkit-any-link {
@@ -33,7 +33,10 @@ p {
 
 img {
   margin: 0px;
-  min-height: 100%;
+  height: 140px;
+  width: 100%;
+  display:inline;
+  overflow: hidden;
 }
 
 ul li{
@@ -88,10 +91,23 @@ hr {
   margin-top: 15px;
 }
 
-img {
-    width: 100%;
-    display:inline;
+.image_text {
+  position: relative;
+  top: -21px;
+  right: -15px;
+  color: white !important;
 }
+
+.text-center {
+  background-image: url("bg2.jpg");
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: 100%;
+  background-size: cover;
+  height: 50px;
+  font-size: 36px !important;
+}
+
 
 .container {
   height: 100%;
@@ -107,6 +123,8 @@ img {
 
 .container-fluid {
   padding: 0px !important;
+  width: 100%;
+  overflow: hidden;
 }
 
 .jumbotron {
@@ -135,6 +153,10 @@ img {
   font-size: 17px;
 }
 
+.post_header {
+  text-align: center;
+}
+
 .sub__footer {
   margin: auto;
   font-size: 0;
@@ -144,9 +166,12 @@ img {
 .col-xs-3 {
   padding-left: 0px !important;
   padding-right: 0px !important;
-  height: auto;
+  height: 140px;
 }
 
+.navbar-brand {
+  font-size: 13px !important;
+}
 .nav_footer {
   min-height: 100px;
   background-color: #B8B8B8;
@@ -220,6 +245,10 @@ img {
   font-size: 14px;
 }
 
+.footer_title {
+  margin-bottom: 20px;
+}
+
 #header2 {
   min-height: 1px;
   background-image: url("bg2.jpg");
@@ -230,15 +259,6 @@ img {
   margin-bottom: 30px;
 }
 
-.smedia2 li {
-  /*padding-left: 50px;*/
-  background-color: grey;
-  background-image: url("bg2.jpg");
-  border-radius: 15px;
-  position: relative;
-  float: left;
-}
-
 #logo1 {
   height: 30px;
   width: 30px;
@@ -247,13 +267,6 @@ img {
   position: absolute;
   top: 0px;
   left: 0px;
-}
-
-.random {
-  width: 100%;
-  height: 500px;
-  background-cover:
-  background-repeat;
 }
 
 #headliner {
@@ -292,6 +305,6 @@ img {
 }
 
 #villain {
-  min-height: 100%;
   width: 100%;
+
 }

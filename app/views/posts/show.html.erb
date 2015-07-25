@@ -1,0 +1,15 @@
+<% content_for :top do %>
+<%= @showpost.title %>
+<% end %>
+
+<div class="post-preview">
+  <h2 class="post-title">
+    <%= @showpost.title %>
+  </h2>
+  <h3 class="post-subtitle">
+    <%= @showpost.summary %>
+  </h3>
+</a>
+<p class="post-meta">Posted by <a href="#"><%= @showpost.author %></a></p>
+</div>
+<hr/>
