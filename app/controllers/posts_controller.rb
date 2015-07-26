@@ -10,6 +10,10 @@ class PostsController < ApplicationController
     @showpost = Post.find(params[:id].to_i)
   end
 
+  def search
+  @locate = Locate.search params[:search]
+  end
+
 
 
 

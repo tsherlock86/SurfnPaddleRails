@@ -30,9 +30,9 @@
             <div>
               <ul class="nav navbar-nav">
               </ul>
-              <ul class="nav navbar-nav pull-right">
+              <ul id="nav_top" class="nav navbar-nav pull-right">
                 <li><a><%= link_to 'About', about_path %></a></li>
-                <li><a href="#">Search</a></li>
+                <li><a><%= link_to 'Search', about_path %></a></li>
               </ul>
             </div>
           </div>
@@ -44,21 +44,7 @@
           <div class="row">
         <%= yield %>
           </div>
-
-        <!-- <div class="wrapper__side">
-          <img id="logo2" src="logo2.jpg">
-          <h2>Zack Taylor<h2>
-          <ul class="smedia">
-            <li class="connect">Twitter</li>
-            <li class="connect">Facebook</li>
-            <li class="connect">Instagram</li>
-          </ul>
-          <img id="side_image" src="image2.jpg">
-          <h2 class="quotes">"Looks like it's time to go to work."<h2>
-          <p class="side_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et venenatis lorem, nec venenatis magna. Sed in blandit leo. Donec nec leo ligula. Aliquam erat volutpat.<p>
-        </div>
-      </div> -->
-    </div>
+      </div>
       <div class="container-fluid">
           <hr/>
           <%= yield(:bottom) %>

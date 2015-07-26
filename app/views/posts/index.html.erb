@@ -2,7 +2,7 @@
 <%= "Rangers!" %>
 <% end %>
 
-
+<div class="col-xs-8">
 <div class="post-preview">
   <h2 class="post-title">
     <%= @firstpost.title %>
@@ -11,13 +11,28 @@
     <%= @firstpost.summary %>
   </h3>
 </a>
-<p class="post-meta">Posted by <a href="#"><%= @firstpost.author %></a></p>
+<p class="post-meta">Posted by <a href="#"><%= @firstpost.author %></a> on <%= @firstpost.created_at.strftime('%B %d, %Y') %></p>
 </div>
 <hr/>
+</div>
+<div class="col-xs-4">
+  <div class="aside"><%= image_tag('logo2.jpg', size: "40") %></img>
+  <h5>Zack Taylor</h5>
+    <ul class="list-inline">
+    <li class="col-xs-4">Twitter</li>
+    <li class="col-xs-4">Facebook</li>
+    <li class="col-xs-4">Instagram</li>
+  </ul>
+</div>
+  <div class ="aside_image"><%= image_tag('logo2.jpg', size: "40x60") %></div>
+    <p class="sub-heading">"Looks like it's time to go to work."</p>
+  <p class="filler">Quick-witted and clever, Zack relies on a combination of skill, strength, and agility to win his battles. The original Black Ranger</p>
+</div>
+
 
 <% content_for :bottom do %>
 
-<h3 class="text-center">MOST POPULAR POSTS</h3>
+<h3 class="headline">MOST POPULAR POSTS</h3>
 <div class="row">
 
   <div class="col-xs-3">
