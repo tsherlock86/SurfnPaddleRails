@@ -37,7 +37,7 @@ class Post
             :title      => "Foul Play In The Sky",
             :body       => " ",
             :summary    => "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. ",
-            :image      => 'villain5.jpg',
+            :image      => 'villian5.jpg',
             :author     => "Zack Taylor",
             :created_at => (1..10).to_a.sample.months.ago
           ),

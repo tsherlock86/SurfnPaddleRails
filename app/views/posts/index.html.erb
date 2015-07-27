@@ -11,7 +11,7 @@
     <%= @firstpost.summary %>
   </h3>
 </a>
-<p class="post-meta">Posted by <a href="#"><%= @firstpost.author %></a> on <%= @firstpost.created_at.strftime('%B %d, %Y') %></p>
+<p class="post-meta">Posted by <a><%=  link_to @firstpost.author, about_path %></a> on <%= @firstpost.created_at.strftime('%B %d, %Y') %></p>
 </div>
 <hr/>
 </div>
