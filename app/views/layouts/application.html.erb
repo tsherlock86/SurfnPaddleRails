@@ -5,17 +5,13 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body id="<%= params[:controller] %>" class="<%= params[:action] %>">
 
@@ -49,11 +45,10 @@
           <hr/>
           <%= yield(:bottom) %>
           <footer class="footer">
-
             <a class="navbar-brand">Zordon Productions, Copyright 2015. All Rights Reserved.</a>
               <ul class="nav navbar-nav pull-right">
-                <li><a href="#">Store</a></li>
-                <li><a href="#">DVDS</a></li>
+                <li><a href="http://www.toywiz.com/rangerminis.html">Store</a></li>
+                <li><a href="http://timelife.com/products/power-rangers-from-mighty-morphin-to-lost-galaxy">DVDS</a></li>
                 <li><a href="#">Tour Locator</a></li>
                 <li><a href="#">Villain Locator</a></li>
               </ul>

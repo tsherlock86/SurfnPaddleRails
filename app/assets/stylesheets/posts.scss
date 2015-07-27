@@ -28,7 +28,7 @@ p {
   font-size: 12px;
   font-style: normal;
   text-align: left;
-  color: black !important;
+  color: grey !important;
 }
 
 img {
@@ -96,11 +96,18 @@ hr {
   margin-top: 15px;
 }
 
+.navbar>.container-fluid .navbar-brand {
+  margin-left: -8px !important;
+}
+
 .image_text {
   position: relative;
   top: -21px;
-  right: -15px;
+  right: -12px;
   color: white !important;
+  font-family: 'Poiret One', cursive;
+  font-size: 18px;
+  line-height: 10px;
 }
 
 .aside img {
@@ -204,6 +211,7 @@ hr {
 .post-subtitle {
   color: #4c4c4c;
   font-size: 17px;
+  margin-left: 4px;
 }
 
 .post_header {

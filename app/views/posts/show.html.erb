@@ -2,6 +2,11 @@
 <%= @showpost.title %>
 <% end %>
 
+<div class="col-md-3 col-sm-3">
+    <img class="img-thumbnail img-responsive photo"><%= @showpost.image %></img>
+
+</div>
+<div class="col-md-9 col-sm-9">
 <div class="post-preview">
   <h2 class="post-title">
     <%= @showpost.title %>
@@ -10,6 +15,7 @@
     <%= @showpost.summary %>
   </h3>
 </a>
-<p class="post-meta">Posted by <a href="#"><%= @showpost.author %></a></p>
+<p class="post-meta">Posted by <a><%= link_to @showpost.author, about_path %> on <%= @showpost.created_at.strftime('%B %d, %Y') %></a></p>
+</div>
 </div>
 <hr/>

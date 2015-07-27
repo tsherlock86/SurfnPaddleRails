@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
 
+
   def index
     @posts = Post.all
     @frontpost = @posts.sort_by{|posts| posts.created_at}
@@ -14,7 +15,9 @@ class PostsController < ApplicationController
   @locate = Locate.search params[:search]
   end
 
+  def image
 
+  end
 
 
 end
