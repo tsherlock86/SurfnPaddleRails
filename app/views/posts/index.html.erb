@@ -11,7 +11,7 @@
     <%= @firstpost.summary %>
   </h3>
 </a>
-<p class="post-meta">Posted by <a><%=  link_to @firstpost.author, about_path %></a> on <%= @firstpost.created_at.strftime('%B %d, %Y') %></p>
+<p class="post-meta">Posted by <a><%= link_to("#{@firstpost.author.name}", about_path) %></a></p>
 </div>
 <hr/>
 </div>
@@ -29,28 +29,16 @@
   <p class="filler">Quick-witted and clever, Zack relies on a combination of skill, strength, and agility to win his battles. The original Black Ranger. Whenever he didn't have an arm around Trini or Kimberly, Zack could be found pursuing his attractive, but hard-to-get classmate, Angela. Zack always loved a good joke. </p>
 </div>
 
-
 <% content_for :bottom do %>
 
 <h3 class="headline">MOST POPULAR POSTS</h3>
 <div class="row">
+  <% @posts.take(4).each do |post| %>
+  <div class="col-xs-3">
+    <%= link_to image_tag(post.image), post_path(post.id) %>
+    <p class="image_text"><%= post.title %></p>
+  </div>
 
-  <div class="col-xs-3">
-    <%= link_to image_tag('villian1.jpg'), post_path(:id => 1) %>
-    <p class="image_text"><%= @posts[0].title %></p>
-  </div>
-  <div class="col-xs-3">
-    <%= link_to image_tag('villian2.jpg'), post_path(:id => 2) %>
-    <p class="image_text"><%= @posts[1].title %></p>
-  </div>
-  <div class="col-xs-3">
-    <%= link_to image_tag('villian3.jpg'), post_path(:id => 3) %>
-    <p class="image_text"><%= @posts[2].title  %></p>
-  </div>
-  <div class="col-xs-3">
-    <%= link_to image_tag('villian4.jpg'), post_path(:id => 4) %>
-    <p class="image_text"><%= @posts[3].title %></p>
-  </div>
-</div>
+  <% end %>
 
-<% end %>
+  <% end %>

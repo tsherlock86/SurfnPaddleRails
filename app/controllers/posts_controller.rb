@@ -9,6 +9,7 @@ class PostsController < ApplicationController
 
   def show
     @showpost = Post.find(params[:id].to_i)
+    
   end
 
   def search
